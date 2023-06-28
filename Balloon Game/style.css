@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("Graphic/background.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pump-box {
+  width: 10%;
+  height: 10%;
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+}
+
+.pump-box img {
+  width: 100%;
+}
+
+.pump-handle {
+  width: 10%;
+  height: 10%;
+  position: fixed;
+  bottom: 24%;
+  right: 0;
+  transition: ease-in;
+}
+
+.pump-handle-updown {
+  /* width: 10%;
+  height: 5%; */
+  /* animation: MoveUpDown 1s linear infinite; */
+  /* position: absolute; */
+  /* left: 0;
+  bottom: 0; */
+  animation-name: MoveUpDown;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+}
+/* @keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-37px);
+  }
+} */
+
+@keyframes MoveUpDown {
+  from {
+    height: 10%;
+  }
+  to {
+    height: 5%;
+  }
+}
+
+.pump-handle img {
+  width: 100%;
+}
+
+.pump-pipe {
+  width: 14%;
+  height: 10%;
+  position: fixed;
+  bottom: 18%;
+  right: 5%;
+}
+
+.pump-pipe img {
+  width: 100%;
+}
+
+.balloon {
+  width: 10%;
+  height: 10%;
+  position: fixed;
+  bottom: 32%;
+  right: 10.4%;
+  animation-name: balloon1;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes balloon1 {
+  from {
+    height: 0;
+    width: 0;
+  }
+  to {
+    height: 10%;
+    width: 10%;
+  }
+}
+
+.balloon img {
+  width: 100%;
+}
